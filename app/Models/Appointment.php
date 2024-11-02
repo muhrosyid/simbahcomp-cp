@@ -25,7 +25,7 @@ class Appointment extends Model
         'meeting_at' => 'date',
     ];
 
-    public function product(){
+    public function products(){
         return $this->belongsTo(Product::class, 'product_id');
     }
 }
