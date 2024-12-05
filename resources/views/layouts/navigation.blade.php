@@ -31,7 +31,7 @@
                             </x-slot>
         
                             <x-slot name="content">
-                                <x-dropdown-link :href="route('admin.hero sections.index')">
+                                <x-dropdown-link :href="route('admin.hero_sections.index')">
                                     {{ __('Hero Section') }}
                                 </x-dropdown-link>
                                 <x-dropdown-link :href="route('admin.principles.index')">

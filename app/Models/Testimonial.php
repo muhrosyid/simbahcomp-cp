@@ -13,10 +13,10 @@ class Testimonial extends Model
     protected $fillable = [
         'message',
         'thumbnail',
-        'project_clients_id',
+        'project_client_id',
     ];
 
-    public function clients(){
-        return $this->belongsTo(ProjectClient::class, 'project_clients_id');
+    public function client(){
+        return $this->belongsTo(ProjectClient::class, 'project_client_id');
     }
 }
