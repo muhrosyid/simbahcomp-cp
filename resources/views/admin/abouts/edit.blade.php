@@ -47,29 +47,13 @@
                     <h3 class="text-indigo-950 text-lg font-bold mt-4">Keypoints</h3>
 
                     <div class="mt-4">
-                        <x-input-label for="keypoints" :value="__('Keypoints')" />
-                    
+                                            
                         <div class="flex flex-col gap-y-5">
-                            @foreach ($about->keypoints as $key => $keypoint)
-                                <input 
-                                    type="text" 
-                                    class="py-3 rounded-lg border-slate-300 border" 
-                                    value="{{ old('keypoints.' . $key, $keypoint->keypoint) }}" 
-                                    name="keypoints[{{ $key }}]" 
-                                    placeholder="Edit keypoint"
-                                >
-                            @endforeach
-                    
-                            <!-- Add Empty Fields for New Keypoints -->
-                            @for ($i = count($about->keypoints); $i < 3; $i++)
-                                <input 
-                                    type="text" 
-                                    class="py-3 rounded-lg border-slate-300 border" 
-                                    value="{{ old('keypoints.' . $i) }}" 
-                                    name="keypoints[{{ $i }}]" 
-                                    placeholder="Add new keypoint"
-                                >
-                            @endfor
+                            <x-input-label for="keypoints" :value="__('Keypoints')" />
+                            @forelse($about->keypoints as $keypoint)
+                            <input type="text" class="py-3 rounded-lg border-slate-300 border" value="{{$keypoint->keypoint}}" name="keypoints[]">
+                            @empty
+                            @endforelse                            
                         </div>
                     
                         <x-input-error :messages="$errors->get('keypoints.*')" class="mt-2" />
