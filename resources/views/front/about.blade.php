@@ -6,11 +6,11 @@
         <x-navbar/>
         <div class="flex flex-col gap-[50px] items-center py-20">
           <div class="breadcrumb flex items-center justify-center gap-[30px]">
-            <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Home</p>
+            <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Beranda</p>
             <span class="text-cp-light-grey">/</span>
-            <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">About Us</p>
+            <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Visi-Misi</p>
           </div>
-          <h2 class="font-bold text-4xl leading-[45px] text-center">Since Beginning We Only <br> Want to Make World Better</h2>
+          <h2 class="font-bold text-4xl leading-[45px] text-center">Kita Akan Senantiasa Peduli <br> Terhadap Permasalahan IT Anda</h2>
         </div>
     </div>
   </div>
@@ -75,51 +75,51 @@
     @endforelse
   </div>
   <div id="Clients" class="container max-w-[1130px] mx-auto flex flex-col justify-center text-center gap-5 mt-20">
-    <h2 class="font-bold text-lg">Trusted by 500+ Top Leaders Worldwide</h2>
+    <h2 class="font-bold text-lg">Klien kami</h2>
     <div class="logo-container flex flex-wrap gap-5 justify-center">
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-54.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/logo-lldikti61.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-52.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/logo-ori.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-55.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/Newera.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-44.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/pelni.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-51.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/poldajateng.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-55.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/volta.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-52.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/logodiskominfo.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-54.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/tigaraksa.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-51.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/restu sejati.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
     </div>
@@ -194,11 +194,11 @@
       <div class="flex flex-col gap-10">
         <div class="flex items-center gap-3">
           <div class="flex shrink-0 h-[43px] overflow-hidden">
-              <img src="assets/logo/logo.svg" class="object-contain w-full h-full" alt="logo">
+              <img src="{{asset('assets/logo/logonew.png')}}" class="object-contain w-full h-full" alt="logo">
           </div>
           <div class="flex flex-col">
-            <p id="CompanyName" class="font-extrabold text-xl leading-[30px] text-white">ShaynaComp</p>
-            <p id="CompanyTagline" class="text-sm text-cp-light-grey">Build Futuristic Dreams</p>
+            <p id="CompanyName" class="font-extrabold text-xl leading-[30px] text-white">Simba[h] Komputer</p>
+            <p id="CompanyTagline" class="text-sm text-cp-light-grey">Service with Passion</p>
           </div>
         </div>
         <div class="flex items-center gap-4">
@@ -249,7 +249,7 @@
       </div>
     </div>
     <div class="absolute -bottom-[135px] w-full">
-      <p class="font-extrabold text-[250px] leading-[375px] text-center text-white opacity-5">SHAYNA</p>
+      <p class="font-extrabold text-[250px] leading-[375px] text-center text-white opacity-5">SIMBA[H]</p>
     </div>
   </footer>
 

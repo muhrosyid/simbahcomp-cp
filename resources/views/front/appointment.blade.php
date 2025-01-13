@@ -8,31 +8,31 @@
   <div id="Contact" class="container max-w-[1130px] mx-auto flex flex-wrap xl:flex-nowrap justify-between gap-[50px] relative z-10">
     <div class="flex flex-col mt-20 gap-[50px]">
       <div class="breadcrumb flex items-center gap-[30px]">
-        <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Home</p>
+        <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Beranda</p>
         <span class="text-cp-light-grey">/</span>
-        <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Product</p>
-        <span class="text-cp-light-grey">/</span>
-        <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Appointment</p>
+        {{-- <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Product</p>
+        <span class="text-cp-light-grey">/</span> --}}
+        <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Pemesanan</p>
       </div>
-      <h1 class="font-extrabold text-4xl leading-[45px]">We Help You to Build Awesome Project</h1>
+      <h1 class="font-extrabold text-4xl leading-[45px]">Kita Akan Bantu Anda Dengan Sepenuh Hati</h1>
       <div class="flex flex-col gap-5">
         <div class="flex items-center gap-[10px]">
           <div class="w-6 h-6 flex shrink-0">
             <img src="assets/icons/global.svg" alt="icon">
           </div>
-          <p class="text-cp-dark-blue font-semibold">No 96, Anggapati Jakarta</p>
+          <p class="text-cp-dark-blue font-semibold">Perum. Griya Karisma, Blok C No. 07, Semarang</p>
         </div>
         <div class="flex items-center gap-[10px]">
           <div class="w-6 h-6 flex shrink-0">
             <img src="assets/icons/call.svg" alt="icon">
           </div>
-          <p class="text-cp-dark-blue font-semibold">(021) 22081996</p>
+          <p class="text-cp-dark-blue font-semibold">085643563591</p>
         </div>
         <div class="flex items-center gap-[10px]">
           <div class="w-6 h-6 flex shrink-0">
             <img src="assets/icons/monitor-mobbile.svg" alt="icon">
           </div>
-          <p class="text-cp-dark-blue font-semibold">shaynacomp.com</p>
+          <p class="text-cp-dark-blue font-semibold">simbah-comp.my.id</p>
         </div>
       </div>
     </div>
@@ -40,54 +40,54 @@
         @csrf
       <div class="flex items-center gap-[18px]">
         <div class="flex flex-col gap-2 flex w-full">
-          <p class="font-semibold">Complete Name</p>
+          <p class="font-semibold">Nama Lengkap</p>
           <div class="flex items-center gap-[10px] p-[14px_20px] border border-[#E8EAF2] focus-within:border-cp-dark-blue transition-all duration-300 rounded-xl bg-white">
             <div class="w-[18px] h-[18px] flex shrink-0">
               <img src="assets/icons/profile.svg" alt="icon">
             </div>
-            <input type="text" name="name" id="" class="appearance-none outline-none bg-white placeholder:font-normal placeholder:text-cp-black font-semibold w-full" placeholder="Write your complete name" required>
+            <input type="text" name="name" id="" class="appearance-none outline-none bg-white placeholder:font-normal placeholder:text-cp-black font-semibold w-full" placeholder="Tulis nama lengkap anda" required>
           </div>
         </div>
         <div class="flex flex-col gap-2 flex w-full">
-          <p class="font-semibold">Email Address</p>
+          <p class="font-semibold">Alamat Email</p>
           <div class="flex items-center gap-[10px] p-[14px_20px] border border-[#E8EAF2] focus-within:border-cp-dark-blue transition-all duration-300 rounded-xl bg-white">
             <div class="w-[18px] h-[18px] flex shrink-0">
               <img src="assets/icons/sms.svg" alt="icon">
             </div>
-            <input type="email" name="email" id="" class="appearance-none outline-none bg-white placeholder:font-normal placeholder:text-cp-black font-semibold w-full" placeholder="Write your email address" required>
+            <input type="email" name="email" id="" class="appearance-none outline-none bg-white placeholder:font-normal placeholder:text-cp-black font-semibold w-full" placeholder="Tulis alamat anda" required>
           </div>
         </div>
       </div>
       <div class="flex items-center gap-[18px]">
         <div class="flex flex-col gap-2 flex w-full">
-          <p class="font-semibold">Phone Number</p>
+          <p class="font-semibold">Nomor WA</p>
           <div class="flex items-center gap-[10px] p-[14px_20px] border border-[#E8EAF2] focus-within:border-cp-dark-blue transition-all duration-300 rounded-xl bg-white">
             <div class="w-[18px] h-[18px] flex shrink-0">
               <img src="assets/icons/call-black.svg" alt="icon">
             </div>
-            <input type="tel" name="phone_number" id="" class="appearance-none outline-none bg-white placeholder:font-normal placeholder:text-cp-black font-semibold w-full" placeholder="Write your phone number" required>
+            <input type="tel" name="phone_number" id="" class="appearance-none outline-none bg-white placeholder:font-normal placeholder:text-cp-black font-semibold w-full" placeholder="Tulis nomor telepon anda" required>
           </div>
         </div>
         <div class="flex flex-col gap-2 flex w-full">
-          <p class="font-semibold">Meeting Date</p>
+          <p class="font-semibold">Tanggal Visit</p>
           <div class="flex items-center gap-[10px] p-[14px_20px] border border-[#E8EAF2] focus-within:border-cp-dark-blue transition-all duration-300 rounded-xl bg-white relative">
             <div class="w-[18px] h-[18px] flex shrink-0">
               <img src="assets/icons/calendar.svg" alt="icon">
             </div>
-            <button type="button" id="dateButton" class="p-0 bg-transparent w-full text-left border-none outline-none">Choose the date</button>
+            <button type="button" id="dateButton" class="p-0 bg-transparent w-full text-left border-none outline-none">Pilih tanggal</button>
             <input type="date" name="meeting_at" id="dateInput" class="absolute opacity-0 -z-10">
           </div>
         </div>
       </div>
       <div class="flex items-center gap-[18px]">
         <div class="flex flex-col gap-2 flex w-full">
-          <p class="font-semibold">Your Interest</p>
+          <p class="font-semibold">Keperluan Anda</p>
           <div class="flex items-center gap-[10px] p-[14px_20px] border border-[#E8EAF2] focus-within:border-cp-dark-blue transition-all duration-300 rounded-xl bg-white">
             <div class="w-[18px] h-[18px] flex shrink-0">
               <img src="assets/icons/building-4-black.svg" alt="icon">
             </div>
             <select name="product_id" id="" class="appearance-none outline-none w-full invalid:font-normal font-semibold px-[10px] -mx-[10px]" required>
-              <option value="" hidden>Choose a project</option>
+              <option value="" hidden>Pilih Satu</option>
               @foreach($products as $product)
               <option value="{{$product->id}}">{{$product->name}}</option>
               @endforeach
@@ -105,63 +105,63 @@
         </div>
       </div>
       <div class="flex flex-col gap-2 flex w-full">
-        <p class="font-semibold">Project Brief</p>
+        <p class="font-semibold">Keterangan Lengkap</p>
         <div class="flex gap-[10px] p-[14px_20px] border border-[#E8EAF2] focus-within:border-cp-dark-blue transition-all duration-300 rounded-xl bg-white">
           <div class="w-[18px] h-[18px] flex shrink-0 mt-[3px]">
             <img src="assets/icons/message-text.svg" alt="icon">
           </div>
-          <textarea name="brief" id="" rows="6" class="appearance-none outline-none bg-white placeholder:font-normal placeholder:text-cp-black font-semibold w-full resize-none" placeholder="Tell us the project brief"></textarea>
+          <textarea name="brief" id="" rows="6" class="appearance-none outline-none bg-white placeholder:font-normal placeholder:text-cp-black font-semibold w-full resize-none" placeholder="Beri tahu kami detail keperluan anda"></textarea>
         </div>
       </div>
-      <button type="submit" class="bg-cp-dark-blue p-5 w-full rounded-xl hover:shadow-[0_12px_30px_0_#312ECB66] transition-all duration-300 font-bold text-white">Book Appointment</button>
+      <button type="submit" class="bg-cp-dark-blue p-5 w-full rounded-xl hover:shadow-[0_12px_30px_0_#312ECB66] transition-all duration-300 font-bold text-white">Pesan Sekarang</button>
     </form>
   </div>
-  <div id="Clients" class="container max-w-[1130px] mx-auto flex flex-col justify-center text-center gap-5 mt-20 relative z-10">
-    <h2 class="font-bold text-lg">Trusted by 500+ Top Leaders Worldwide</h2>
+  <div id="Clients" class="container max-w-[1130px] mx-auto flex flex-col justify-center text-center gap-5 mt-20">
+    <h2 class="font-bold text-lg">Klien kami</h2>
     <div class="logo-container flex flex-wrap gap-5 justify-center">
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-54.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/logo-lldikti61.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-52.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/logo-ori.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-55.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/Newera.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-44.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/pelni.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-51.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/poldajateng.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-55.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/volta.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-52.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/logodiskominfo.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-54.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/tigaraksa.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="assets/logo/logo-51.svg" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('assets/logo/restu sejati.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
     </div>
@@ -231,11 +231,11 @@
       <div class="flex flex-col gap-10">
         <div class="flex items-center gap-3">
           <div class="flex shrink-0 h-[43px] overflow-hidden">
-              <img src="assets/logo/logo.svg" class="object-contain w-full h-full" alt="logo">
+              <img src="{{asset('assets/logo/logonew.png')}}" class="object-contain w-full h-full" alt="logo">
           </div>
           <div class="flex flex-col">
-            <p id="CompanyName" class="font-extrabold text-xl leading-[30px] text-white">ShaynaComp</p>
-            <p id="CompanyTagline" class="text-sm text-cp-light-grey">Build Futuristic Dreams</p>
+            <p id="CompanyName" class="font-extrabold text-xl leading-[30px] text-white">Simba[h] Komputer</p>
+            <p id="CompanyTagline" class="text-sm text-cp-light-grey">Service with Passion</p>
           </div>
         </div>
         <div class="flex items-center gap-4">
@@ -286,7 +286,7 @@
       </div>
     </div>
     <div class="absolute -bottom-[135px] w-full">
-      <p class="font-extrabold text-[250px] leading-[375px] text-center text-white opacity-5">SHAYNA</p>
+      <p class="font-extrabold text-[250px] leading-[375px] text-center text-white opacity-5">SIMBA[H]</p>
     </div>
   </footer>
 @endsection
@@ -296,5 +296,5 @@
   <!-- JavaScript -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
-  <script src="js/carousel.js"></script>
+  <script src="{{asset('js/carousel.js')}}"></script>
 @endpush

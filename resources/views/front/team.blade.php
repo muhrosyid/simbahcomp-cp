@@ -10,11 +10,11 @@
     <div class="container max-w-[1130px] mx-auto flex flex-col gap-[50px] items-center">
       <div class="flex flex-col gap-[50px] items-center">
         <div class="breadcrumb flex items-center justify-center gap-[30px]">
-          <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Home</p>
+          <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Beranda</p>
           <span class="text-cp-light-grey">/</span>
-          <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Our Team</p>
+          <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Anggota</p>
         </div>
-        <h2 class="font-bold text-4xl leading-[45px] text-center">We’re Here to Build <br> Your Awesome Projects</h2>
+        <h2 class="font-bold text-4xl leading-[45px] text-center">Kita Ada dan Siap<br> Untuk Panggilan Anda</h2>
       </div>
       <div class="teams-card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px] justify-center">
         @forelse($teams as $team)
@@ -112,11 +112,11 @@
       <div class="flex flex-col gap-10">
         <div class="flex items-center gap-3">
           <div class="flex shrink-0 h-[43px] overflow-hidden">
-              <img src="assets/logo/logo.svg" class="object-contain w-full h-full" alt="logo">
+              <img src="{{asset('assets/logo/logonew.png')}}" class="object-contain w-full h-full" alt="logo">
           </div>
           <div class="flex flex-col">
-            <p id="CompanyName" class="font-extrabold text-xl leading-[30px] text-white">ShaynaComp</p>
-            <p id="CompanyTagline" class="text-sm text-cp-light-grey">Build Futuristic Dreams</p>
+            <p id="CompanyName" class="font-extrabold text-xl leading-[30px] text-white">Simba[h] Komputer</p>
+            <p id="CompanyTagline" class="text-sm text-cp-light-grey">Service with Passion</p>
           </div>
         </div>
         <div class="flex items-center gap-4">
@@ -167,7 +167,7 @@
       </div>
     </div>
     <div class="absolute -bottom-[135px] w-full">
-      <p class="font-extrabold text-[250px] leading-[375px] text-center text-white opacity-5">SHAYNA</p>
+      <p class="font-extrabold text-[250px] leading-[375px] text-center text-white opacity-5">SIMBA[H]</p>
     </div>
   </footer>
 
