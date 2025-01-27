@@ -19,9 +19,9 @@ class FrontController extends Controller
     public function index()
     {
         $hero_section = HeroSection::orderByDesc('id')->take(1)->get();
-        $statistics = CompanyStatistic::take(4)->get();
+        $statistics = CompanyStatistic::take(5)->get();
         $principles = OurPrinciple::take(4)->get();
-        $products = Product::take(3)->get();
+        $products = Product::take(4)->get();
         $teams = OurTeam::take(6)->get();
         $testimonials = Testimonial::take(4)->get();
         return view('front.index', compact('statistics', 'principles', 'products', 'teams', 'testimonials', 'hero_section')); // Replace with the actual view name for the landing page

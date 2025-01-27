@@ -31,10 +31,28 @@
         <p>kosong gan!</p>
         @endforelse
     </div>
+    
     <div class="absolute w-[43%] h-full top-0 right-0 overflow-hidden z-0">
         <img src="{{Storage::url($hero->banner)}}" class="object-cover w-full h-full" alt="banner">
     </div>
   </div>
+  <div class="chatbox" id="chatbox">
+    <div class="chatbox-header">
+        Chat with Us
+    </div>
+    <div class="chatbox-body" id="content-box">
+        <!-- Chat messages will be appended here -->
+    </div>
+    <div class="chatbox-footer">
+        <input type="text" id="input" class="form-control" placeholder="Type a message...">
+        <button id="button-submit" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+
+  <button class="chat-toggle-btn" id="chat-toggle-btn">
+      <i class="fas fa-comments"></i>
+  </button>
+      
   <div id="Clients" class="container max-w-[1130px] mx-auto flex flex-col justify-center text-center gap-5 mt-20">
     <h2 class="font-bold text-lg">Klien kami</h2>
     <div class="logo-container flex flex-wrap gap-5 justify-center">
@@ -201,8 +219,8 @@
   </div>
   <div id="Testimonials" class="w-full flex flex-col gap-[50px] items-center mt-20">
     <div class="flex flex-col gap-[14px] items-center">
-      <p class="badge w-fit bg-cp-pale-blue text-cp-light-blue p-[8px_16px] rounded-full uppercase font-bold text-sm">SUCCESS CLIENTS</p>
-      <h2 class="font-bold text-4xl leading-[45px] text-center">Our Satisfied Clients<br>From Worldwide Company</h2>
+      <p class="badge w-fit bg-cp-pale-blue text-cp-light-blue p-[8px_16px] rounded-full uppercase font-bold text-sm">REAKSI KLIEN</p>
+      <h2 class="font-bold text-4xl leading-[45px] text-center">Apa kata mereka tentang Simbah Komputer?</h2>
     </div>
     <div class="main-carousel w-full">
       @forelse($testimonials as $testimonial)
@@ -313,51 +331,51 @@
               <div class="flex flex-col gap-[10px]">
                   <h2 class="font-bold text-4xl leading-[45px]">Frequently Asked Questions</h2>
               </div>
-              <a href="{{route('front.appointment')}}" class="p-5 bg-cp-black rounded-xl text-white w-fit font-bold">Contact Us</a>
+              <a href="{{route('front.appointment')}}" class="p-5 bg-cp-black rounded-xl text-white w-fit font-bold">Hubungi Kami</a>
           </div>
           <div class="flex flex-col gap-[30px] sm:w-[603px] shrink-0">
               <div class="flex flex-col p-5 rounded-2xl bg-white w-full">
                   <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-1">
-                      <span class="font-bold text-lg leading-[27px] text-left">Can installments be beneficial for both?</span>
+                      <span class="font-bold text-lg leading-[27px] text-left">Berapa biaya jasa servis?</span>
                       <div class="arrow w-9 h-9 flex shrink-0">
                           <img src="{{asset('assets/icons/arrow-circle-down.svg')}}" class="transition-all duration-300" alt="icon">
                       </div>
                   </button>
                   <div id="accordion-faq-1" class="accordion-content hide">
-                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">We want to protect our and clients asset's to the max level so that we chose the best one from Jakarta, Indonesia will also protect post building finished completed ahead one.</p>
+                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">Jasa servis dikenakan biaya servis Rp.100.000</p>
                   </div>
               </div>
               <div class="flex flex-col p-5 rounded-2xl bg-white w-full">
                   <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-2">
-                      <span class="font-bold text-lg leading-[27px] text-left">What kind of framework you popular with?</span>
+                      <span class="font-bold text-lg leading-[27px] text-left">Apakah ada biaya pengecekan?</span>
                       <div class="arrow w-9 h-9 flex shrink-0">
                           <img src="{{asset('assets/icons/arrow-circle-down.svg')}}" class="transition-all duration-300" alt="icon">
                       </div>
                   </button>
                   <div id="accordion-faq-2" class="accordion-content hide">
-                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">We want to protect our and clients asset's to the max level so that we chose the best one from Jakarta, Indonesia will also protect post building finished completed ahead one.</p>
+                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">Jika user cancel servis, ada biaya pengecekan sebesar Rp.25.000. Jika cancel dari pihak kami, tidak ada biaya pengecekan.</p>
                   </div>
               </div>
               <div class="flex flex-col p-5 rounded-2xl bg-white w-full">
                   <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-3">
-                      <span class="font-bold text-lg leading-[27px] text-left">What insurance provider do you use?</span>
+                      <span class="font-bold text-lg leading-[27px] text-left">Berapa lama garansi yang diberikan?</span>
                       <div class="arrow w-9 h-9 flex shrink-0">
                           <img src="{{asset('assets/icons/arrow-circle-down.svg')}}" class="transition-all duration-300" alt="icon">
                       </div>
                   </button>
                   <div id="accordion-faq-3" class="accordion-content hide">
-                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">We want to protect our and clients asset's to the max level so that we chose the best one from Jakarta, Indonesia will also protect post building finished completed ahead one.</p>
+                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">Lama garansi untuk jasa servis adalah tujuh hari. Untuk penggantian sparepart mengikuti garansi resmi. Rentangnya bervariasi mulai dari 1 bulan.</p>
                   </div>
               </div>
               <div class="flex flex-col p-5 rounded-2xl bg-white w-full">
                   <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-4">
-                      <span class="font-bold text-lg leading-[27px] text-left">What if we have other questions?</span>
+                      <span class="font-bold text-lg leading-[27px] text-left">Apakah ada biaya transport untuk luar Semarang?</span>
                       <div class="arrow w-9 h-9 flex shrink-0">
                           <img src="{{asset('assets/icons/arrow-circle-down.svg')}}" class="transition-all duration-300" alt="icon">
                       </div>
                   </button>
                   <div id="accordion-faq-4" class="accordion-content hide">
-                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">We want to protect our and clients asset's to the max level so that we chose the best one from Jakarta, Indonesia will also protect post building finished completed ahead one.</p>
+                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">Ya. Perbaikan yang berada di luar Semarang kami kenakan biaya transport tergantung jarak yang ditempuh. Mulai dari Rp.25.000</p>
                   </div>
               </div>
           </div>
@@ -464,4 +482,62 @@
   <script src="{{asset('js/accordion.js')}}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <script src="{{asset('js/modal-video.js')}}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{{asset('css/all.min.css')}}" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        $('#chat-toggle-btn').on('click', function () {
+            $('#chatbox').toggle();
+        });
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            } 
+        });
+
+        $('#button-submit').on('click', function () {
+            var $value = $('#input').val();
+            $('#content-box').append(
+                '<div class="d-flex justify-content-end mb-2">' +
+                    '<div class="chat-message user">' + $value + '</div>' +
+                '</div>'
+            );
+
+            $.ajax({
+              type: 'post',
+              url: '{{ url("send") }}',
+              data: { 'input': $value },
+              success: function(data) {
+                if (data.error) {
+                  $('#content-box').append(
+                    '<div class="d-flex mb-2">' +
+                      '<div class="chat-message bg-danger text-white">' + data.error + '</div>' +
+                    '</div>'
+                    );
+                } else {
+                  $('#content-box').append(
+                    '<div class="d-flex mb-2">' +
+                      '<div class="chat-message">' + data + '</div>' +
+                    '</div>'
+                );
+                }
+                $('#input').val('');
+                $('#content-box').scrollTop($('#content-box')[0].scrollHeight);
+              },
+              error: function(xhr, status, error) {
+                console.error('AJAX Error:', error);
+                $('#content-box').append(
+                '<div class="d-flex mb-2">' +
+                  '<div class="chat-message bg-danger text-white">An error occurred while sending your message.</div>' +
+                '</div>'
+                );
+              }
+            });
+        });
+    });
+  </script>
 @endpush
