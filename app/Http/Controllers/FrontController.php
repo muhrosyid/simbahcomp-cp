@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreAppointmentRequest;
 use App\Models\Appointment;
 use App\Models\CompanyAbout;
+use App\Models\CompanyBlog;
 use App\Models\CompanyStatistic;
 use App\Models\HeroSection;
 use App\Models\OurPrinciple;
@@ -51,5 +52,24 @@ class FrontController extends Controller
             $newAppointment = Appointment::create($validated);
         });
         return redirect()->route('front.index');
+    }
+
+    public function blog(){
+        $blogs = CompanyBlog::take(4)->get();
+        return view('front.blog', compact('blogs'));
+    }
+
+    public function show($id){
+        // Mengambil data blog berdasarkan ID
+        $blog = CompanyBlog::findOrFail($id);
+
+        // Mengirim data blog ke view
+        return view('front.blog-show', compact('blog'));
+    }
+
+
+    public function product(){
+        $products = Product::take(4)->get();
+        return view('front.product', compact('products'));
     }
 }

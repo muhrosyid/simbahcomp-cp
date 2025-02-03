@@ -33,7 +33,9 @@
     </div>
     
     <div class="absolute w-[43%] h-full top-0 right-0 overflow-hidden z-0">
-        <img src="{{Storage::url($hero->banner)}}" class="object-cover w-full h-full" alt="banner">
+      @if($hero_section->isNotEmpty())
+      <img src="{{ Storage::url($hero_section->first()->banner) }}" class="object-cover w-full h-full" alt="banner">
+      @endif
     </div>
   </div>
   <div class="chatbox" id="chatbox">

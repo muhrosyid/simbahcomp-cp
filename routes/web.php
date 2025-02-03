@@ -12,12 +12,16 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectClientController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\ChatBotController;
+use App\Http\Controllers\CompanyBlogController;
 use Illuminate\Support\Facades\Route;
 use League\Flysystem\UrlGeneration\ChainedPublicUrlGeneratorTest;
 
 Route::get('/', [FrontController::class, 'index'])->name('front.index');
 Route::get('/team', [FrontController::class, 'team'])->name('front.team');
 Route::get('/about', [FrontController::class, 'about'])->name('front.about');
+Route::get('/product', [FrontController::class, 'product'])->name('front.product');
+Route::get('/blog', [FrontController::class, 'blog'])->name('front.blog');
+Route::get('/blog/{id}', [FrontController::class, 'show'])->name('front.blog.show');
 Route::get('/appointment', [FrontController::class, 'appointment'])->name('front.appointment');
 Route::post('/appointment/store', [FrontController::class, 'appointment_store'])->name('front.appointment_store');
 Route::post('send', [ChatBotController::class, 'sendChat']);
@@ -59,6 +63,9 @@ Route::middleware('auth')->group(function () {
         });
         Route::middleware('can:manage hero sections')->group(function () {
             Route::resource('hero_sections', HeroSectionController::class);
+        });
+        Route::middleware('can:manage blogs')->group(function () {
+            Route::resource('blogs', CompanyBlogController::class);
         });
     });
 });

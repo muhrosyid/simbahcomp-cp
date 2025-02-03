@@ -81,6 +81,10 @@
                         {{ __('About') }}
                     </x-nav-link>
 
+                    <x-nav-link :href="route('admin.blogs.index')" :active="request()->routeIs('admin.blogs.index')">
+                        {{ __('Blog') }}
+                    </x-nav-link>
+
                     <x-nav-link :href="route('admin.appointments.index')" :active="request()->routeIs('admin.appointments.index')">
                         {{ __('Appointments') }}
                     </x-nav-link>
